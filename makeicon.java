@@ -96,7 +96,16 @@ public class makeicon{
 	 
 		@Override
 		public void keyPressed(KeyEvent event) {
-			System.exit(0);	
+	 
+			char ch = event.getKeyChar();
+			 
+			if (ch == 'a' ||ch == 'b'||ch == 'c' ||ch == 'q' ) {
+				System.exit(0);
+			}
+			if( ch == 'm')
+			{
+				makeicon.frame.setState(JFrame.ICONIFIED);
+			}
 		}
 	}
 
